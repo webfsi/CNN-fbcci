@@ -1,0 +1,49 @@
+.footer {
+	padding-bottom: 60px;
+	padding-top: 52px;
+	background-color: #000;
+	color: #737373;
+
+	hr {
+		background: #262626;
+		height: 2px;
+		// background-color: red !important;
+		color: red;
+		box-shadow: none;
+		outline: none;
+		border: none;
+		margin: 20px 0;
+		padding: 0;
+		width: 100%;
+	}
+	&_copy {
+		font-family: $font2;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 22px;
+		ul {
+			display: flex;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			li {
+				padding: 0;
+				margin: 0 10px 0 0;
+			}
+			a {
+				&:hover {
+					color: #fff;
+				}
+			}
+			@include mobile {
+				flex-wrap: wrap;
+				li {
+					padding: 0;
+					margin: 0 10px 10px 0;
+				}
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,296 @@
+.elktr_lottie-two {
+	&._var-3 {
+		img {
+			margin-left: auto;
+			display: block;
+		}
+		top: -100px;
+		@media (max-width: 1557px) {
+			svg {
+				max-width: 790px;
+			}
+		}
+		@include tabletMaxi {
+			svg {
+				max-width: 580px;
+			}
+			img {
+				max-width: 64%;
+			}
+		}
+		@include mobile {
+			top: -37px;
+			img {
+				max-width: 85%;
+			}
+			svg {
+				max-width: 85%;
+				left: 0;
+				margin-left: auto;
+				display: block;
+			}
+		}
+
+	}
+}
+
+.grid-bl {
+	&._var-3 {
+		align-items: flex-start;
+		._push-top {
+			margin-top: 410px;
+			@include tabletMaxi {
+				margin-top: 0;
+			}
+		}
+		.fabric-bl_img {
+			top: 0;
+			left: auto;
+			right: 50%;
+			margin-right: 10%;
+			max-width: none;
+			margin-left: 0;
+			padding-right: 0;
+			text-align: right;
+			img, svg {
+				display: inline-block;
+				max-width: 149%;
+				margin-right: auto;
+				left: -49%;
+				position: relative;
+			}
+			// svg
+			padding-right: 3%;
+			svg {
+				width: auto !important;
+				height: auto !important;
+				top: -30px;
+				max-width: 130%;
+				left: -30%;
+
+			}
+			@include tabletMaxi {
+				right: auto;
+				left: 0;
+				padding-right: 0;
+				margin-right: auto;
+				margin-left: auto;
+				max-width: 500px;
+				position: relative;
+				left: -140px;
+				//svg
+				left: -20px;
+				margin-bottom: 0;
+				max-width: 100%;
+
+				img {
+					max-width: none;
+					left: auto;
+				}
+
+				svg {
+					max-width: 100%;
+					left: 0;
+				}
+			}
+			@include mobile {
+				width: calc(100% + 24px);
+				width: 100%;
+				max-width: none;
+
+				left: 0;
+				margin-left: -24px;
+				text-align: left;
+
+				//svg
+				left: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+				margin-top: 0;
+				img {
+					max-width: 100%;
+				}
+				svg {
+					max-width: 100%;
+					left: -24px;
+					top: 0;
+				}
+			}
+		}
+	}
+}
+
+.grid-bl_img-right {
+	&._var-3 {
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+		align-items: flex-start;
+		img {
+			max-width: none;
+			width: auto;
+		}
+		svg {
+			max-width: 150%;
+			width: auto !important;
+			height: auto !important;
+
+		}
+		@include tabletMaxi {
+			left: 100px;
+			svg {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+@include tabletMaxi {
+	.grid-bl._float-mobile-right {
+		.grid-bl_img-right {
+			margin-bottom: 20px;
+			&._var-3 {
+				@include tabletMaxi {
+					left: 60px;
+					svg {
+						max-width: 100%;
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include mobile {
+	.grid-bl._float-mobile-right {
+		.grid-bl_img-right {
+			margin-bottom: 20px;
+			&._var-3 {
+				@include tabletMaxi {
+					left: 0;
+					svg {
+						max-width: calc(100% + 24px);
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+@include tabletMaxi {
+	&.grid-bl._float-mobile-right {
+		.grid-bl_img-right {
+			&._var-3 {
+				float: none;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+.grid-bl_picture {
+	&._var-3 {
+		.img-dot_dot-st {
+			display: none;
+		}
+		@media (min-width: 1200px) {
+			.img-dot {
+				padding-top: 0;
+				margin-top: -57px;
+			}
+			.img-dot_dot-sm {
+				bottom: -70px;
+				z-index: 1;
+
+				&:after {
+					content: "";
+					position: absolute;
+					width: 1px;
+					left: 50%;
+					margin-left: -1px;
+					top: 100%;
+					height: 600px;
+					z-index: -1;
+					background-color: #043c21;
+				}
+			}
+			.img-dot_dot-st {
+				bottom: -140px;
+				display: block;
+			}
+
+		}
+	}
+}
+
+.fabric-bl_img-pipl {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 47.67%;
+	max-width: 420px;
+	padding-top: 40px;
+	&:after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		margin-left: -1px;
+		bottom: 100%;
+		margin-bottom: -40px;
+		// z-index: -1;
+		background-color: #043C21;
+		height: 600px;
+		width: 1px;
+	}
+	span {
+		width: 348px;
+		height: 348px;
+		display: block;
+		border-radius: 50%;
+		overflow: hidden;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		z-index: 1;
+
+		img {
+			width: 100%;
+			height: 100%;
+			display: block;
+			object-fit: cover;
+		}
+	}
+	@include tabletMaxi {
+		position: relative;
+		top: auto;
+		left: auto;
+		bottom: auto;
+		right: auto;
+		margin: 30px auto;
+		padding-top: 0;
+		width: auto;
+		max-width: 100%;
+		span {
+			width: 328px;
+			height: 328px;
+		}
+		&:after {
+			display: none;
+		}
+	}
+	@media (max-width: 370px) {
+		span {
+			width: 280px;
+			height: 280px;
+		}
+	}
+}
+
+

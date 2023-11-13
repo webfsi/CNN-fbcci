@@ -1,0 +1,52 @@
+// Basic styles
+@import "reset";
+// @import "common/fonts";
+@import "vars";
+@import "mixins/general";
+@import "mixins/media";
+@import "generated/**/*";
+
+// Animations styles
+@import "common/animations";
+
+// Libs
+// @import "../../node_modules/swiper/swiper";
+
+// Common styles
+@import "common/default";
+@import "common/typo";
+@import "common/layout";
+// @import "common/forms";
+@import "common/btn";
+@import "common/states";
+
+// Styles for JS-helpers
+// @import "helpers/accordeon";
+// @import "helpers/tabs";
+// @import "helpers/custom-select";
+
+// Blocks styles
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/hub";
+@import "blocks/nav-points";
+@import "blocks/transition-box";
+@import "blocks/article";
+@import "blocks/animation";
+@import "blocks/preloader";
+@import "blocks/cta";
+@import "blocks/video-modal";
+@import "blocks/prompt";
+
+// Home Page styles
+@import "article-section/article-hero";
+@import "article-section/elektro-box";
+@import "article-section/two-img";
+@import "article-section/fabric";
+@import "article-section/press";
+@import "article-section/fabric-txt";
+
+// Home Page styles
+// @import "pages/home/hero";
+
+@import "blocks/article-three";

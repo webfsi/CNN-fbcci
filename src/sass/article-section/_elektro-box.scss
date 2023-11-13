@@ -1,0 +1,216 @@
+.elktr {
+	position: relative;
+	z-index: 2;
+	color: #fff;
+	background-color: #043C21;
+	margin-top: -2px;
+
+	padding-top: 417px;
+	padding-bottom: 124px;
+	@include tabletMaxi {
+		padding-top: 355px;
+		padding-bottom: 100px;
+	}
+	@include mobile {
+		padding-top: 62%;
+		padding-bottom: 72px;
+	}
+
+	.grid-bl {
+		position: relative;
+		z-index: 3;
+	}
+
+	.grid-bl_inner {
+		@include tabletMaxi {
+			max-width: 80%;
+			width: auto;
+			margin-right: 0;
+		}
+		@include mobile {
+			max-width: 500px;
+		}
+	}
+
+  // border-radius: 50% 50% 0 0/160px 160px 0 0;
+  // display: block;
+  // margin: 0 0 -30px -10px;
+	// &:before {
+	// 	// content: "";
+	// 	// position: absolute;
+	// 	// top: 0;
+	// 	// left: 0;
+	// 	// right: 0;
+	// 	// height: 50px;
+	// 	// background: radial-gradient(ellipse at center, rgba(255,0,0,0) 0%,rgba(255,0,0,0) 50%,rgba(255,0,0,1) 50%,rgba(255,0,0,1) 100%)
+
+	// 	content: "";
+	// 	position: absolute;
+	// 	width: 300%;
+	// 	height: 300%;
+	// 	top: -25%;
+	// 	left: -100%;
+	// 	background: radial-gradient(ellipse at center, rgba(255,0,0,0) 0%,rgba(255,0,0,0) 50%,rgba(255,0,0,1) 50%,rgba(255,0,0,1) 100%);
+
+	// }
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: -1px;
+		left: 0;
+		right: 0;
+		height: 144px;
+		background: url(../img/elktr-bg-top.png) center top no-repeat;
+		background-size: 100% 100%;
+		@include tabletMaxi {
+			height: 80px;
+		}
+		@include mobile {
+			height: 40px;
+		}
+
+	}
+
+	// &_bg-one {
+	// 	position: absolute;
+	// 	right: 0;
+	// 	left: 0;
+	// 	overflow: hidden;
+	// 	text-align: right;
+	// 	z-index: -2;
+	// 	img {
+	// 		display: inline-block;
+	// 		position: relative;
+	// 		top: -30px;
+	// 	}
+	// }
+
+	// &_bg-two {
+	// 	position: absolute;
+	// 	top: -110px;
+	// 	right: 0;
+	// 	z-index: 1;
+	// }
+
+	&_inner {
+		padding-top: 433px;
+		padding-bottom: 153px;
+		position: relative;
+		z-index: 3;
+		@include tabletMaxi {
+			padding-top: 355px;
+			padding-bottom: 100px;
+		}
+
+	}
+	&_txt {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.6;
+		max-width: 430px;
+		>*+* {
+			margin-top: 20px;
+		}
+	}
+}
+
+.elktr_lottie-one {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	// max-width: 60%;
+	overflow: hidden;
+	z-index: -1;
+
+	svg {
+		// width: 100%;
+		position: relative;
+		top: -50px;
+		max-width: 1250px;
+		margin-left: auto;
+		display: block;
+		// max-height: 100%;
+		height: auto !important;
+		width: auto !important;
+		> g > [clip-path] {
+			// display: none !important;
+		}
+		@include tabletMaxi {
+			max-width: 740px;
+		}
+		@include mobile {
+			max-width: none;
+			left: 0;
+		}
+		@include mobile {
+			max-width: 120%;
+			left: -20%;
+		}
+	}
+}
+
+.elktr_lottie-two {
+	position: absolute;
+	top: -71px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	// max-width: 60%;
+	overflow: hidden;
+	z-index: 1;
+
+	&._var-2 {
+
+		svg {
+			max-width: 900px;
+			@include tabletMaxi {
+				max-width: 690px;
+				left: 110px;
+			}
+			@include mobile {
+				left: 20%;
+				max-width: 100%;
+			}
+		}
+		@media (max-width: 1180px) and (min-width: 1024px) {
+			svg {
+				max-width: 858px;
+				right: -122px;
+			}
+		}
+		@include tabletMaxi {
+			top: -100px;
+		}
+		@include mobile {
+			top: -60px;
+		}
+	}
+
+	svg {
+		// width: 100%;
+		position: relative;
+		top: 0;
+		right: -22px;
+		// opacity: 0;
+		max-width: 1280px;
+		margin-left: auto;
+		display: block;
+		// max-height: 100%;
+		height: auto !important;
+		width: auto !important;
+		[clip-path="url(#__lottie_element_122)"] {
+			display: none !important;
+		}
+		@include tabletMaxi {
+			max-width: 760px;
+		}
+		@include mobile {
+			max-width: 120%;
+			left: -20%;
+		}
+	}
+}
+

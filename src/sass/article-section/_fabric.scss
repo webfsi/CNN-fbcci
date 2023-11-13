@@ -1,0 +1,43 @@
+.fabric-info {
+	max-width: 490px;
+	position: relative;
+	z-index: 1;
+	blockquote {
+		p {
+			padding-right: 60px;
+		}
+	}
+	&_img {
+		position: absolute;
+		left: 100%;
+		margin-left: 60px;
+		bottom: -22px;
+
+		margin-left: 21px;
+    	bottom: -63px;
+		max-width: 675px;
+		&._center-bl {
+			bottom: auto;
+			top: 130px;
+		}
+		img, svg {
+			display: block;
+			max-width: none;
+
+		}
+		svg {
+			width: auto !important;
+			height: auto !important;
+			max-width: 735px;
+		}
+
+	}
+	&._second {
+		max-width: 520px;
+		.fabric-info_img {
+			margin-left: 72px;
+		}
+	}
+}
+
+

@@ -1,0 +1,35 @@
+---
+title: Embracing Sustainability – FBCCI – CNN
+description:
+pageName: homePage
+---
+
+{% set assetsPath = '../' %}
+
+{% extends 'layouts/_page-default-inner.twig' %}
+{% block content %}
+
+	{% include 'blocks/_nav.twig' %}
+
+	<div class="wrapper">
+
+		{% include 'pages/home/_hub-full.twig' %}
+
+		{% include 'blocks/_transition.twig' %}
+		<main class="article" data-article-init>
+			<div class="l-smooth-scroll" data-scroll-container data-articles-container>
+				<div class="article_wrapp wrap-header" data-article-parse data-article="1">
+
+					{# {% include 'pages/home/_article-second.twig' %} #}
+					{% include 'pages/home/_article.twig' %}
+
+				</div>
+			</div>
+		</main>
+
+		{% set poster = '../img/af1-video.jpeg' %}
+
+		{% include 'blocks/_video-modal.twig' %}
+		{% include 'blocks/_prompt.twig' %}
+	</div>
+{% endblock %}

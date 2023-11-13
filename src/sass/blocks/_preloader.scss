@@ -1,0 +1,61 @@
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	right: 0;
+	background-color: #F6F3EA;
+	z-index: 999999;
+
+	&._hidden {
+		display: none;
+	}
+
+	opacity: 1;
+	transition: all 0.7s ease-out;
+
+	&.is-animation {
+		opacity: 0;
+	}
+
+	&.is-done {
+		opacity: 0;
+		pointer-events: none;
+		// display: none;
+		// overflow: hidden;
+		// width: 1px;
+		// height: 1px;
+		position: absolute;
+	}
+}
+
+._preloader {
+	.hero-hub_circle {
+		transform: scale(0.5);
+	}
+	
+	.hero-hub_bg-wrap { //.hero-hub_txt-bl
+		opacity: 0.001;
+		position: relative;
+		z-index: 2;
+		transition: 0.7s;
+		transform: translate3d(0,0,0) scale(1.05);
+		will-change: transform;
+	}
+	
+	.hero-hub_txt,
+	.hero-hub_tt {
+		opacity: 0;
+	}
+	
+	.hero-hub_icon {
+		transform: scaleY(0);
+	}
+	
+	.hero-hub_tt {
+		transform: translateY(94%);
+	}
+}
+

@@ -1,0 +1,32 @@
+// .wrapper {
+// 	padding: 0 $wrap-lg;
+
+// 	@include tabletMaxi {
+// 		padding: 0 $wrap-md;
+// 	}
+
+// 	@include mobile {
+// 		padding: 0 $wrap-sm;
+// 	}
+// }
+
+.container {
+	width: 100%;
+	max-width: 1312px;
+	padding: 0 100px;
+	margin: 0 auto;
+	&_lg {
+		max-width: 1334px;
+		padding-left: 92px;
+		padding-right: 92px;
+	}
+	@include tabletMid {
+		padding: 0 50px;
+	}
+	@include tabletMaxi {
+		padding: 0 40px;
+	}
+	@include mobile {
+		padding: 0 24px;
+	}
+}

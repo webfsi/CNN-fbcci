@@ -1,0 +1,55 @@
+
+.fabric-bl {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: flex-end;
+	grid-gap: 40px;
+	position: relative;
+
+	&_img {
+		margin-left: -9px;
+		position: absolute;
+		top: 125px;
+		left: 0;
+		max-width: 45%;
+		z-index: -1;
+
+		&:not(._ver-2) {
+			@include mobile {
+				width: calc(100% + 20px);
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+
+		&._ver-2 {
+			top: -70px;
+			width: 100%;
+			@include mobile {
+				margin-top: 0;
+			}
+		}
+
+	}
+	&_left {
+		&._push-top {
+			margin-top: 650px;
+		}
+	}
+	.txt-bl {
+		blockquote {
+			p {
+				padding-right: 100px;
+			}
+		}
+	}
+}
+
+@include mobile {
+	.grid-bl._float-mobile .fabric-bl_img {
+		&._ver-2 {
+			margin-top: -50px;
+		}
+	}
+}

@@ -1,0 +1,174 @@
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.h1, h1 {
+
+}
+
+.h2, h2 {
+
+}
+
+.h3, h3 {
+
+}
+
+.h4, h4 {
+
+}
+
+.h5, h5 {
+
+}
+
+.h6, h6 {
+
+}
+
+.txt-bl {
+	h2, h1, h3, h4, h5 {
+		font-weight: 700;
+		line-height: 1.3;
+		margin-bottom: 25px;
+	}
+	h2 {
+		font-size: 28px;
+		margin-bottom: 36px;
+		@include tabletMaxi {
+			font-size: 30px;
+			margin-bottom: 25px;
+		}
+		@include mobile {
+			font-size: 20px;
+			margin-bottom: 18px;
+		}
+	}
+	h3 {
+		font-size: 28px;
+		margin-bottom: 36px;
+		@include tabletMaxi {
+			font-size: 30px;
+			margin-bottom: 25px;
+		}
+		@include mobile {
+			font-size: 20px;
+			margin-bottom: 18px;
+		}
+	}
+
+  p {
+		margin-bottom: 28px;
+		@include tabletMaxi {
+			margin-bottom: 24px;
+		}
+		@include mobile {
+			margin-bottom: 20px;
+		}
+	}
+  p, ul, ol, li {
+    &:not(:last-child) {
+      margin-bottom: 28px;
+			@include tabletMaxi {
+				margin-bottom: 24px;
+			}
+			@include mobile {
+				margin-bottom: 20px;
+			}
+    }
+  }
+
+	b {
+		font-weight: 600;
+	}
+
+  strong {
+    font-weight: 700;
+  }
+
+  i, em {
+    font-style: italic;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+	blockquote {
+		margin-top: 36px;
+		margin-bottom: 36px;
+		p {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 1.4;
+			max-width: 420px;
+			@include tabletMaxi {
+				max-width: none;
+				font-size: 26px;
+			}
+			@include mobile {
+				font-size: 24px;
+				line-height: 1.4;
+			}
+		}
+		hr {
+			width: 36px;
+			margin: 24px 0;
+			border: none;
+			height: 1px;
+			padding: 0;
+			// background-color: #043C21;
+			background-color: #AA1B07;
+			
+			@include tabletMaxi {
+				margin: 20px 0;
+				background-color: #AA1B07;
+			}
+			@include tabletMaxi {
+				margin: 18px 0;
+			}
+		}
+		>* {
+			display: block;
+		}
+		> span, > b, > strong {
+			font-size: 16px;
+			@include tabletMaxi {
+				font-size: 18px;
+			}
+			@include mobile {
+				font-size: 12px;
+				line-height: 1.4;
+			}
+		}
+		> b, > strong {
+			font-weight: 600;
+		}
+	}
+
+	> * {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&._first {
+
+		> * {
+			&:last-child {
+				margin-bottom: 28px;
+				@include tabletMaxi {
+					margin-bottom: 24px;
+				}
+				@include mobile {
+					margin-bottom: 20px;
+				}
+			}
+		}
+
+	}
+}
